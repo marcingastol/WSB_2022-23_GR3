@@ -3,7 +3,8 @@ class CatParent():
         print("Jestem rodzicem!")
 
 class CatKid(CatParent):
-    pass
+    def voice(self):
+        print("Jestem dzieckiem")
 
 # sprawdzenie potomnosci dziedzieczenia klasy
 #print(issubclass(CatKid, CatParent))
@@ -11,4 +12,5 @@ class CatKid(CatParent):
 parent = CatParent()
 kid = CatKid()
 
-print(kid.voice())
+parent.voice()
+kid.voice()
